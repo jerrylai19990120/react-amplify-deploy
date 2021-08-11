@@ -5,8 +5,7 @@ const Search = (props) => {
     return (
         <div style={{width: '100%', height: 1000}}>
             <FNavBar />
-            <object type="text/html" data="http://www.fangsso.com/" style={{width: '100%', height: '100%'}}>
-            </object>
+            <embed type="text/html" src="http://www.fangsso.com/" style={{width: '100%', height: '100%'}}></embed>
         </div>
     )
 }
