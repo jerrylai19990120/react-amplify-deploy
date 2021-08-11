@@ -1,12 +1,12 @@
 import React from 'react';
 import FNavBar from './FNavBar';
 import { Carousel, Image} from 'react-bootstrap';
-import bgImg1 from '../Assets/bgImg1.jpeg'
-import bgImg2 from '../Assets/bgImg2.jpeg'
-import bgImg3 from '../Assets/bgImg3.jpeg'
-import bgImg4 from '../Assets/bgImg4.jpeg'
-import bgImg5 from '../Assets/bgImg5.jpeg'
-import bgImg6 from '../Assets/bgImg6.jpeg'
+import bgImg1 from '../Assets/bgImg1.png'
+import bgImg2 from '../Assets/bgImg2.png'
+import bgImg3 from '../Assets/bgImg3.png'
+import bgImg4 from '../Assets/bgImg4.png'
+import bgImg5 from '../Assets/bgImg5.png'
+import bgImg6 from '../Assets/bgImg6.png'
 import BottomSection from './BottomSection';
 
 const Home = (props) => {
