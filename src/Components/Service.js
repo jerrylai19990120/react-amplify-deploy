@@ -11,7 +11,7 @@ const Service = (props) => {
     return (
         <div>
             <FNavBar/>
-            <Container>
+            <Container style={{paddingBottom: 60}}>
                 <Row>
                     <Col>
                         <Card style={{ width: '24rem', height: '28rem', marginTop: 30 }}>

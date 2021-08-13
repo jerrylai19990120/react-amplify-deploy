@@ -8,6 +8,7 @@ const VipSignUp = (props) => {
         <div>
             <FNavBar />
             <SignUpItem />
+            <div style={{height: 60}}></div>
             <BottomSection />
         </div>
     )

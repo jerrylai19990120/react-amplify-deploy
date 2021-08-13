@@ -10,7 +10,7 @@ const Tutorial = (props) => {
     return (
         <div>
             <FNavBar />
-            <Container style={{marginTop: 60}}>
+            <Container style={{marginTop: 60, paddingBottom: 60}}>
                 <Row>
                     <Col>
                     <Card className="bg-dark text-white">

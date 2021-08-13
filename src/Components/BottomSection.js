@@ -5,7 +5,7 @@ import logo from '../Assets/logo.png';
 const BottomSection = (props) => {
 
     return (
-        <div style={{width: "100%", height: 400, marginTop: 60}}>
+        <div style={{width: "100%", height: 400}}>
             <div style={{width: "100%", height: "80%", backgroundColor: "rgb(39, 41, 47)", paddingTop: 60}}>
                 <Container>
                     <Row>

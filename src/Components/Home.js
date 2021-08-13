@@ -8,6 +8,8 @@ import bgImg4 from '../Assets/bgImg4.png'
 import bgImg5 from '../Assets/bgImg5.png'
 import bgImg6 from '../Assets/bgImg6.png'
 import BottomSection from './BottomSection';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBuilding, faSearch, faDesktop, faChalkboardTeacher, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Home = (props) => {
     return (
@@ -77,59 +79,48 @@ const Home = (props) => {
             </Carousel>
             <div style={{width: "100%", height: 138}}>
                 <div style={{width: "100%", height: "100%", position: "absolute", marginTop: 35}}>
-                    <h4>房企通服务</h4>
-                    <span style={{color: 'gray'}}>———— 服务由房企通提供 ————</span>
+                    <h4>房企通</h4>
+                    <span style={{color: 'gray'}}>———— 房企通提供无限可能 ————</span>
                 </div>
-                <Image style={{width: "100%", height: 138, backgroundImage: `url(${bgImg6})`, opacity: 0.06}} />
+                <Image style={{width: "100%", height: '100%', backgroundImage: `url(${bgImg6})`, opacity: 0.06}} />
             </div>
-            <div>
-                <div style={{width: "20%", height: 300, display: "inline-block"}}>
-                    
-                </div>
-                <div style={{width: "20%", height: 300, display: "inline-block"}}>
-
-                </div>
-                <div style={{width: "20%", height: 300, display: "inline-block"}}>
-
-                </div>
-                <div style={{width: "20%", height: 300, display: "inline-block"}}>
-
-                </div>
-                <div style={{width: "20%", height: 300, display: "inline-block"}}>
-
-                </div>
+            <div style={{width: "100%", height: 310}}>
+                <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/service">
+                    <img src={bgImg1} alt="bg" style={{width: '100%', height: 310, opacity: 0.2}}/>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -185}}>
+                        <FontAwesomeIcon icon={faBuilding} style={{color: 'white', width: 50, height: 50}}/>
+                        <h5 style={{color: 'white', marginTop: 10}}>房企通服务</h5>
+                    </div>
+                </a>
+                <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/search">
+                    <img src={bgImg2} alt="bg" style={{width: '100%', height: 310, opacity: 0.2}}/>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -185}}>
+                        <FontAwesomeIcon icon={faSearch} style={{color: 'white', width: 50, height: 50}}/>
+                        <h5 style={{color: 'white', marginTop: 10}}>房税搜</h5>
+                    </div>
+                </a>
+                <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/tutorial">
+                    <img src={bgImg3} alt="bg"style={{width: '100%', height: 310, opacity: 0.2}}/>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -185}}>
+                        <FontAwesomeIcon icon={faChalkboardTeacher} style={{color: 'white', width: 50, height: 50}}/>
+                        <h5 style={{color: 'white', marginTop: 10}}>在线培训</h5>
+                    </div>
+                </a>
+                <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/vipsignup">
+                    <img src={bgImg4} alt="bg"style={{width: '100%', height: 310, opacity: 0.2}}/>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -185}}>
+                        <FontAwesomeIcon icon={faUserPlus} style={{color: 'white', width: 50, height: 50}}/>
+                        <h5 style={{color: 'white', marginTop: 10}}>会员注册</h5>
+                    </div>
+                </a>
+                <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/applications">
+                    <img src={bgImg5} alt="bg" style={{width: '100%', height: 310, opacity: 0.2}}/>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -185}}>
+                        <FontAwesomeIcon icon={faDesktop} style={{color: 'white', width: 50, height: 50}}/>
+                        <h5 style={{color: 'white', marginTop: 10}}>应用软件</h5>
+                    </div>
+                </a>
             </div>
-            {/*<div style={{width: "100%", height: 138}}>
-                <div style={{width: "100%", height: "100%", position: "absolute", marginTop: 35}}>
-                    <h4>房税搜</h4>
-                    <span style={{color: 'gray'}}>———— 功能由房企通提供 ————</span>
-                </div>
-                <Image style={{width: "100%", height: 138, backgroundImage: `url(${bgImg6})`, opacity: 0.06}} />
-            </div>
-
-            <div style={{width: "100%", height: 138}}>
-                <div style={{width: "100%", height: "100%", position: "absolute", marginTop: 35}}>
-                    <h4>在线培训</h4>
-                    <span style={{color: 'gray'}}>———— 培训由房企通提供 ————</span>
-                </div>
-                <Image style={{width: "100%", height: 138, backgroundImage: `url(${bgImg6})`, opacity: 0.06}} />
-            </div>
-
-            <div style={{width: "100%", height: 138}}>
-                <div style={{width: "100%", height: "100%", position: "absolute", marginTop: 35}}>
-                    <h4>会员注册</h4>
-                    <span style={{color: 'gray'}}>———— 服务由房企通提供 ————</span>
-                </div>
-                <Image style={{width: "100%", height: 138, backgroundImage: `url(${bgImg6})`, opacity: 0.06}} />
-            </div>
-
-            <div style={{width: "100%", height: 138}}>
-                <div style={{width: "100%", height: "100%", position: "absolute", marginTop: 35}}>
-                    <h4>应用软件</h4>
-                    <span style={{color: 'gray'}}>———— 软件由房企通提供 ————</span>
-                </div>
-                <Image style={{width: "100%", height: 138, backgroundImage: `url(${bgImg6})`, opacity: 0.06}} />
-    </div>*/}
             <BottomSection />
         </div>
     )
