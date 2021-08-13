@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import FNavBar from './FNavBar';
 import { Carousel, Image} from 'react-bootstrap';
 import bgImg1 from '../Assets/bgImg1.png'
@@ -8,10 +8,17 @@ import bgImg4 from '../Assets/bgImg4.png'
 import bgImg5 from '../Assets/bgImg5.png'
 import bgImg6 from '../Assets/bgImg6.png'
 import BottomSection from './BottomSection';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBuilding, faSearch, faDesktop, faChalkboardTeacher, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import Lottie from 'react-lottie';
+import animationData from '../Assets/Lottie/building.json'
+import animationData2 from '../Assets/Lottie/search.json'
+import animationData3 from '../Assets/Lottie/tutorial.json'
+import animationData4 from '../Assets/Lottie/signup.json'
+import animationData5 from '../Assets/Lottie/applications.json'
 
 const Home = (props) => {
+
+    const lottieRef = useRef()
+
     return (
         <div>
             <FNavBar />
@@ -87,36 +94,74 @@ const Home = (props) => {
             <div style={{width: "100%", height: 310}}>
                 <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/service">
                     <img src={bgImg1} alt="bg" style={{width: '100%', height: 310, opacity: 0.2}}/>
-                    <div style={{position: 'absolute', width: '20%', marginTop: -185}}>
-                        <FontAwesomeIcon icon={faBuilding} style={{color: 'white', width: 50, height: 50}}/>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -195}}>
+                    <Lottie options={{loop: true, autoplay: true, animationData: animationData, rendererSettings: {
+                        preserveAspectRatio: 'xMidYMid slice'
+                    }}}
+                        height={80}
+                        width={80}
+                        isStopped={false}
+                        isPaused={false}
+                        eventListeners={[
+                            {
+                                eventName: 'complete',
+                                callback: () => {
+                                    
+                                },
+                            }
+                        ]}/>
                         <h5 style={{color: 'white', marginTop: 10}}>房企通服务</h5>
                     </div>
                 </a>
                 <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/search">
                     <img src={bgImg2} alt="bg" style={{width: '100%', height: 310, opacity: 0.2}}/>
-                    <div style={{position: 'absolute', width: '20%', marginTop: -185}}>
-                        <FontAwesomeIcon icon={faSearch} style={{color: 'white', width: 50, height: 50}}/>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -195}}>
+                        <Lottie options={{loop: true, autoplay: true, animationData: animationData2, rendererSettings: {
+                            preserveAspectRatio: 'xMidYMid slice'
+                        }}}
+                            height={80}
+                            width={80}
+                            isStopped={false}
+                            isPaused={false}/>
                         <h5 style={{color: 'white', marginTop: 10}}>房税搜</h5>
                     </div>
                 </a>
                 <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/tutorial">
                     <img src={bgImg3} alt="bg"style={{width: '100%', height: 310, opacity: 0.2}}/>
-                    <div style={{position: 'absolute', width: '20%', marginTop: -185}}>
-                        <FontAwesomeIcon icon={faChalkboardTeacher} style={{color: 'white', width: 50, height: 50}}/>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -195}}>
+                        <Lottie options={{loop: true, autoplay: true, animationData: animationData3, rendererSettings: {
+                            preserveAspectRatio: 'xMidYMid slice'
+                        }}}
+                            height={80}
+                            width={80}
+                            isStopped={false}
+                            isPaused={false}/>
                         <h5 style={{color: 'white', marginTop: 10}}>在线培训</h5>
                     </div>
                 </a>
                 <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/vipsignup">
                     <img src={bgImg4} alt="bg"style={{width: '100%', height: 310, opacity: 0.2}}/>
                     <div style={{position: 'absolute', width: '20%', marginTop: -185}}>
-                        <FontAwesomeIcon icon={faUserPlus} style={{color: 'white', width: 50, height: 50}}/>
+                        <Lottie options={{loop: true, autoplay: true, animationData: animationData4, rendererSettings: {
+                            preserveAspectRatio: 'xMidYMid slice'
+                        }}}
+                            height={80}
+                            width={80}
+                            isStopped={false}
+                            isPaused={false}/>
                         <h5 style={{color: 'white', marginTop: 10}}>会员注册</h5>
                     </div>
                 </a>
                 <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/applications">
                     <img src={bgImg5} alt="bg" style={{width: '100%', height: 310, opacity: 0.2}}/>
                     <div style={{position: 'absolute', width: '20%', marginTop: -185}}>
-                        <FontAwesomeIcon icon={faDesktop} style={{color: 'white', width: 50, height: 50}}/>
+                        <Lottie options={{loop: true, autoplay: true, animationData: animationData5, rendererSettings: {
+                            preserveAspectRatio: 'xMidYMid slice'
+                        }}}
+                            height={80}
+                            width={80}
+                            isStopped={false}
+                            isPaused={false}/>
                         <h5 style={{color: 'white', marginTop: 10}}>应用软件</h5>
                     </div>
                 </a>
