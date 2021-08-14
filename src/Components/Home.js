@@ -100,16 +100,10 @@ const Home = (props) => {
                     }}}
                         height={80}
                         width={80}
+                        lottieRef={lottieRef}
                         isStopped={false}
                         isPaused={false}
-                        eventListeners={[
-                            {
-                                eventName: 'complete',
-                                callback: () => {
-                                    
-                                },
-                            }
-                        ]}/>
+                        />
                         <h5 style={{color: 'white', marginTop: 10}}>房企通服务</h5>
                     </div>
                 </a>

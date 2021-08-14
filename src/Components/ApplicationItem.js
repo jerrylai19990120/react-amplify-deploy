@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import Lottie from 'react-lottie';
 
 const ApplicationItem = (props) => {
 
@@ -12,7 +13,14 @@ const ApplicationItem = (props) => {
         <Container style={{width: "100%", height: 540, backgroundColor: props.bgColor}}>
             <Row>
                 <Col>
-                    {props.left==="true" ? <img src={props.imgSrc} alt="logo" style={{width: 430, height: 430, margin: 40}}/>
+                    {props.left==="true" ? <Lottie options={{loop: true, autoplay: true, animationData: props.imgSrc, rendererSettings: {
+                                preserveAspectRatio: 'xMidYMid slice'
+                            }}}
+                                height={430}
+                                width={430}
+                                style={{margin: 40}}
+                                isStopped={false}
+                                isPaused={false}/>
                     : <div style={{margin: 100}}>
                         <h3>{props.title}</h3>
                         <p style={{color: 'gray'}}>{props.body}</p>
@@ -24,7 +32,14 @@ const ApplicationItem = (props) => {
                         <h3>{props.title}</h3>
                         <p style={{color: 'gray'}}>{props.body}</p>
                         <span style={{color: "rgb(32, 123, 230)"}} onClick={moreBtnClicked}>更多</span>
-                    </div> : <img src={props.imgSrc} alt="logo" style={{width: 430, height: 430, margin: 40}}/>}
+                    </div> : <Lottie options={{loop: true, autoplay: true, animationData: props.imgSrc, rendererSettings: {
+                                preserveAspectRatio: 'xMidYMid slice'
+                            }}}
+                                height={430}
+                                width={430}
+                                style={{margin: 40}}
+                                isStopped={false}
+                                isPaused={false}/>}
                 </Col>
             </Row>
         </Container>
