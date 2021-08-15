@@ -8,7 +8,7 @@ import bgImg4 from '../Assets/bgImg4.png'
 import bgImg5 from '../Assets/bgImg5.png'
 import bgImg6 from '../Assets/bgImg6.png'
 import BottomSection from './BottomSection';
-import Lottie from 'react-lottie';
+import Lottie from 'lottie-react';
 import animationData from '../Assets/Lottie/building.json'
 import animationData2 from '../Assets/Lottie/search.json'
 import animationData3 from '../Assets/Lottie/tutorial.json'
@@ -17,7 +17,11 @@ import animationData5 from '../Assets/Lottie/applications.json'
 
 const Home = (props) => {
 
-    const lottieRef = useRef()
+    const lottieRefBuidling = useRef()
+    const lottieRefSearch = useRef()
+    const lottieRefSignup = useRef()
+    const lottieRefTutorial = useRef()
+    const lottieRefApps = useRef()
 
     return (
         <div>
@@ -94,73 +98,36 @@ const Home = (props) => {
             <div style={{width: "100%", height: 310}}>
                 <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/service">
                     <img src={bgImg1} alt="bg" style={{width: '100%', height: 310, opacity: 0.2}}/>
-                    <div style={{position: 'absolute', width: '20%', marginTop: -195}}>
-                    <Lottie options={{loop: true, autoplay: true, animationData: animationData, rendererSettings: {
-                        preserveAspectRatio: 'xMidYMid slice'
-                    }}}
-                        height={80}
-                        width={80}
-                        isClickToPauseDisabled={true}
-                        lottieRef={lottieRef}
-                        isStopped={false}
-                        isPaused={false}
-                        />
-                        <h5 style={{color: 'white', marginTop: 10}}>房企通服务</h5>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -205}}>
+                    <Lottie animationData={animationData} style={{width: 100, height: 100, marginLeft: window.innerWidth*0.2/2-50}} lottieRef={lottieRefBuidling}/>
+                        <h5 style={{color: 'white', marginTop: -10}}>房企通服务</h5>
                     </div>
                 </a>
                 <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/search">
                     <img src={bgImg2} alt="bg" style={{width: '100%', height: 310, opacity: 0.2}}/>
-                    <div style={{position: 'absolute', width: '20%', marginTop: -195}}>
-                        <Lottie options={{loop: true, autoplay: true, animationData: animationData2, rendererSettings: {
-                            preserveAspectRatio: 'xMidYMid slice'
-                        }}}
-                            height={80}
-                            width={80}
-                            isClickToPauseDisabled={true}
-                            isStopped={false}
-                            isPaused={false}/>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -205}}>
+                    <Lottie animationData={animationData2} style={{width: 80, height: 80, marginLeft: window.innerWidth*0.2/2-40}} lottieRef={lottieRefSearch} onLoopComplete={()=> {lottieRefSearch.current.goToAndStop(0, true)}}/>
                         <h5 style={{color: 'white', marginTop: 10}}>房税搜</h5>
                     </div>
                 </a>
                 <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/tutorial">
                     <img src={bgImg3} alt="bg"style={{width: '100%', height: 310, opacity: 0.2}}/>
-                    <div style={{position: 'absolute', width: '20%', marginTop: -195}}>
-                        <Lottie options={{loop: true, autoplay: true, animationData: animationData3, rendererSettings: {
-                            preserveAspectRatio: 'xMidYMid slice'
-                        }}}
-                            height={80}
-                            width={80}
-                            isClickToPauseDisabled={true}
-                            isStopped={false}
-                            isPaused={false}/>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -205}}>
+                    <Lottie animationData={animationData3} style={{width: 80, height: 80, marginLeft: window.innerWidth*0.2/2-40}} lottieRef={lottieRefTutorial} />
                         <h5 style={{color: 'white', marginTop: 10}}>在线培训</h5>
                     </div>
                 </a>
                 <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/vipsignup">
                     <img src={bgImg4} alt="bg"style={{width: '100%', height: 310, opacity: 0.2}}/>
-                    <div style={{position: 'absolute', width: '20%', marginTop: -185}}>
-                        <Lottie options={{loop: true, autoplay: true, animationData: animationData4, rendererSettings: {
-                            preserveAspectRatio: 'xMidYMid slice'
-                        }}}
-                            height={80}
-                            width={80}
-                            isClickToPauseDisabled={true}
-                            isStopped={false}
-                            isPaused={false}/>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -205}}>
+                    <Lottie animationData={animationData4} style={{width: 80, height: 80, marginLeft: window.innerWidth*0.2/2-40}} lottieRef={lottieRefSignup} onLoopComplete={()=> {lottieRefSignup.current.goToAndStop(899, true)}}/>
                         <h5 style={{color: 'white', marginTop: 10}}>会员注册</h5>
                     </div>
                 </a>
                 <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/applications">
                     <img src={bgImg5} alt="bg" style={{width: '100%', height: 310, opacity: 0.2}}/>
-                    <div style={{position: 'absolute', width: '20%', marginTop: -185}}>
-                        <Lottie options={{loop: true, autoplay: true, animationData: animationData5, rendererSettings: {
-                            preserveAspectRatio: 'xMidYMid slice'
-                        }}}
-                            height={80}
-                            width={80}
-                            isClickToPauseDisabled={true}
-                            isStopped={false}
-                            isPaused={false}/>
+                    <div style={{position: 'absolute', width: '20%', marginTop: -205}}>
+                    <Lottie animationData={animationData5} style={{width: 80, height: 80, marginLeft: window.innerWidth*0.2/2-40}} lottieRef={lottieRefApps}/>
                         <h5 style={{color: 'white', marginTop: 10}}>应用软件</h5>
                     </div>
                 </a>
