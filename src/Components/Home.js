@@ -103,7 +103,7 @@ const Home = (props) => {
                         <h5 style={{color: 'white', marginTop: -10}}>房企通服务</h5>
                     </div>
                 </a>
-                <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/search">
+                <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/search" onMouseEnter={()=>{lottieRefSearch.current.play()}}>
                     <img src={bgImg2} alt="bg" style={{width: '100%', height: 310, opacity: 0.2}}/>
                     <div style={{position: 'absolute', width: '20%', marginTop: -205}}>
                     <Lottie animationData={animationData2} style={{width: 80, height: 80, marginLeft: window.innerWidth*0.2/2-40}} lottieRef={lottieRefSearch} onLoopComplete={()=> {lottieRefSearch.current.goToAndStop(0, true)}}/>
@@ -117,7 +117,10 @@ const Home = (props) => {
                         <h5 style={{color: 'white', marginTop: 10}}>在线培训</h5>
                     </div>
                 </a>
-                <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/vipsignup">
+                <a style={{width: "20%", height: 310, float: "left", backgroundColor: 'gray'}} href="/vipsignup" onMouseEnter={()=>{
+                    lottieRefSignup.current.goToAndStop(0, true)
+                    lottieRefSignup.current.play()
+                    }}>
                     <img src={bgImg4} alt="bg"style={{width: '100%', height: 310, opacity: 0.2}}/>
                     <div style={{position: 'absolute', width: '20%', marginTop: -205}}>
                     <Lottie animationData={animationData4} style={{width: 80, height: 80, marginLeft: window.innerWidth*0.2/2-40}} lottieRef={lottieRefSignup} onLoopComplete={()=> {lottieRefSignup.current.goToAndStop(899, true)}}/>
