@@ -18,6 +18,7 @@ const ApplicationItem = (props) => {
                             }}}
                                 height={430}
                                 width={430}
+                                isClickToPauseDisabled={true}
                                 style={{margin: 40}}
                                 isStopped={false}
                                 isPaused={false}/>
@@ -37,6 +38,7 @@ const ApplicationItem = (props) => {
                             }}}
                                 height={430}
                                 width={430}
+                                isClickToPauseDisabled={true}
                                 style={{margin: 40}}
                                 isStopped={false}
                                 isPaused={false}/>}

@@ -100,6 +100,7 @@ const Home = (props) => {
                     }}}
                         height={80}
                         width={80}
+                        isClickToPauseDisabled={true}
                         lottieRef={lottieRef}
                         isStopped={false}
                         isPaused={false}
@@ -115,6 +116,7 @@ const Home = (props) => {
                         }}}
                             height={80}
                             width={80}
+                            isClickToPauseDisabled={true}
                             isStopped={false}
                             isPaused={false}/>
                         <h5 style={{color: 'white', marginTop: 10}}>房税搜</h5>
@@ -128,6 +130,7 @@ const Home = (props) => {
                         }}}
                             height={80}
                             width={80}
+                            isClickToPauseDisabled={true}
                             isStopped={false}
                             isPaused={false}/>
                         <h5 style={{color: 'white', marginTop: 10}}>在线培训</h5>
@@ -141,6 +144,7 @@ const Home = (props) => {
                         }}}
                             height={80}
                             width={80}
+                            isClickToPauseDisabled={true}
                             isStopped={false}
                             isPaused={false}/>
                         <h5 style={{color: 'white', marginTop: 10}}>会员注册</h5>
@@ -154,6 +158,7 @@ const Home = (props) => {
                         }}}
                             height={80}
                             width={80}
+                            isClickToPauseDisabled={true}
                             isStopped={false}
                             isPaused={false}/>
                         <h5 style={{color: 'white', marginTop: 10}}>应用软件</h5>

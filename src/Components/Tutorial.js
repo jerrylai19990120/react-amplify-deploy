@@ -30,6 +30,7 @@ const Tutorial = (props) => {
                             }}}
                                 height={80}
                                 width={80}
+                                isClickToPauseDisabled={true}
                                 isStopped={false}
                                 isPaused={false}/>
                         </Card.ImgOverlay>
@@ -49,6 +50,7 @@ const Tutorial = (props) => {
                             }}}
                                 height={80}
                                 width={80}
+                                isClickToPauseDisabled={true}
                                 isStopped={false}
                                 isPaused={false}/>
                         </Card.ImgOverlay>
@@ -68,6 +70,7 @@ const Tutorial = (props) => {
                             }}}
                                 height={80}
                                 width={80}
+                                isClickToPauseDisabled={true}
                                 isStopped={false}
                                 isPaused={false}/>
                         </Card.ImgOverlay>
