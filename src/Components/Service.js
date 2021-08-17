@@ -1,16 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import bgImg1 from '../Assets/bgImg1.png'
 import bgImg2 from '../Assets/bgImg2.png'
 import bgImg3 from '../Assets/bgImg3.png'
 import BottomSection from './BottomSection';
+import Pagination from 'react-bootstrap/Pagination'
 
 const Service = (props) => {
+
+    const [active, setActive] = useState(1)
+    let items = [];
+    for (let number = 1; number <= 2; number++) {
+        items.push(
+            <Pagination.Item key={number} active={number === active} onClick={()=>{
+                setActive(number)
+            }}>
+            {number}
+            </Pagination.Item>,
+        );
+    }
 
     return (
         <div>
             <Container style={{paddingBottom: 60}}>
-                <Row>
+                {active === 1 ? <Row>
                     <Col>
                         <Card style={{ width: '24rem', height: '28rem', marginTop: 30 }}>
                             <Card.Img variant="top" src={bgImg1} />
@@ -89,6 +102,7 @@ const Service = (props) => {
                             </Card.Body>
                         </Card>
                     </Col>
+                </Row> : <Row>
                     <Col>
                         <Card style={{ width: '24rem', height: '28rem', marginTop: 30 }}>
                             <Card.Img variant="top" src={bgImg3} />
@@ -114,9 +128,11 @@ const Service = (props) => {
                                 <Button variant="primary">详情</Button>
                             </Card.Body>
                         </Card>
-                    </Col>
-                </Row>
+                    </Col></Row>}
             </Container>
+            <div style={{width: '100%', paddingLeft: '48%', paddingBottom: 30}}>
+                <Pagination size="sm">{items}</Pagination>
+            </div>
             <BottomSection />
         </div>
     )
