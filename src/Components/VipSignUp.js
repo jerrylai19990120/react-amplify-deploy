@@ -1,5 +1,4 @@
 import React from 'react';
-import FNavBar from './FNavBar';
 import SignUpItem from './SignUpItem';
 import BottomSection from './BottomSection';
 import Lottie from 'lottie-react';
@@ -9,7 +8,6 @@ import logo from '../Assets/logo.png'
 const VipSignUp = (props) => {
     return (
         <div>
-            <FNavBar />
             <div style={{margin: 36}}>
                 <div style={{float: 'left', marginLeft: "13%", marginTop: 60}}>
                     <div style={{display: 'inline-block'}}>

@@ -1,5 +1,4 @@
 import React from 'react';
-import FNavBar from './FNavBar';
 import ApplicationItem from './ApplicationItem';
 import BottomSection from './BottomSection';
 import product1Animation from '../Assets/Lottie/product1.json'
@@ -10,7 +9,6 @@ import product4Animation from '../Assets/Lottie/product4.json'
 const Applications = (props) => {
     return (
         <div>
-            <FNavBar />
             <ul style={{listStyle: 'none', padding: 0}}>
                 <li>
                     <ApplicationItem title="工程合同台账管理软件（免费版）" bgColor="white" body="Cubicost provides BIM and AI technology based cost management solutions for construction owners, consultants, main contractors and subcontractors around the world (except the Chinese mainland). Cubicost solutions consist of Cubicost BIM quantity takeoff and cost management solutions with 3 products covering architecture and structure, finishes, MEP, rebar, cost estimation, etc. At present, Cubicost supports quantity takeoff and cost estimation standards and rules in 11 countries and region worldwide." imgSrc={product1Animation} left="true"/>

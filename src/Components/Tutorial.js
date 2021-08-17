@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Container, Row, Card } from 'react-bootstrap';
-import FNavBar from './FNavBar';
 import bgImg1 from '../Assets/bgImg1.png'
 import bgImg2 from '../Assets/bgImg2.png'
 import bgImg3 from '../Assets/bgImg3.png'
@@ -13,7 +12,6 @@ import opAnimation from '../Assets/Lottie/operation.json'
 const Tutorial = (props) => {
     return (
         <div>
-            <FNavBar />
             <Container style={{marginTop: 60, paddingBottom: 60}}>
                 <Row>
                     <Col>

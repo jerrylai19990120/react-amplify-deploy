@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import FNavBar from './FNavBar';
 import bgImg1 from '../Assets/bgImg1.png'
 import bgImg2 from '../Assets/bgImg2.png'
 import bgImg3 from '../Assets/bgImg3.png'
@@ -10,7 +9,6 @@ const Service = (props) => {
 
     return (
         <div>
-            <FNavBar/>
             <Container style={{paddingBottom: 60}}>
                 <Row>
                     <Col>

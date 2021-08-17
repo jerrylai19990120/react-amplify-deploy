@@ -1,5 +1,4 @@
 import React, {useRef} from 'react';
-import FNavBar from './FNavBar';
 import { Carousel, Image} from 'react-bootstrap';
 import bgImg1 from '../Assets/bgImg1.png'
 import bgImg2 from '../Assets/bgImg2.png'
@@ -25,7 +24,6 @@ const Home = (props) => {
 
     return (
         <div>
-            <FNavBar />
             <Carousel variant="light">
                 <Carousel.Item interval={3000}>
                     <img
