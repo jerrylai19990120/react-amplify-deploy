@@ -3,6 +3,11 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import bgImg1 from '../Assets/bgImg1.png'
 import bgImg2 from '../Assets/bgImg2.png'
 import bgImg3 from '../Assets/bgImg3.png'
+import bgImg7 from '../Assets/bgImg7.png'
+import bgImg8 from '../Assets/bgImg8.png'
+import bgImg9 from '../Assets/bgImg9.png'
+import bgImg10 from '../Assets/bgImg10.png'
+import bgImg11 from '../Assets/bgImg11.png'
 import BottomSection from './BottomSection';
 import Pagination from 'react-bootstrap/Pagination'
 
@@ -65,7 +70,7 @@ const Service = (props) => {
                     </Col>
                     <Col>
                         <Card style={{ width: '24rem', height: '28rem', marginTop: 30 }}>
-                            <Card.Img variant="top" src={bgImg3} />
+                            <Card.Img variant="top" src={bgImg7} />
                             <Card.Body>
                                 <Card.Title>土地增值税清算审核服务</Card.Title>
                                 <Card.Text>
@@ -78,7 +83,7 @@ const Service = (props) => {
                     </Col>
                     <Col>
                         <Card style={{ width: '24rem', height: '28rem', marginTop: 30 }}>
-                            <Card.Img variant="top" src={bgImg3} />
+                            <Card.Img variant="top" src={bgImg8} />
                             <Card.Body>
                                 <Card.Title>地产项目开发运营决策支持</Card.Title>
                                 <Card.Text>
@@ -91,7 +96,7 @@ const Service = (props) => {
                     </Col>
                     <Col>
                         <Card style={{ width: '24rem', height: '28rem', marginTop: 30 }}>
-                            <Card.Img variant="top" src={bgImg3} />
+                            <Card.Img variant="top" src={bgImg9} />
                             <Card.Body>
                                 <Card.Title>营销策划</Card.Title>
                                 <Card.Text>
@@ -105,7 +110,7 @@ const Service = (props) => {
                 </Row> : <Row>
                     <Col>
                         <Card style={{ width: '24rem', height: '28rem', marginTop: 30 }}>
-                            <Card.Img variant="top" src={bgImg3} />
+                            <Card.Img variant="top" src={bgImg10} />
                             <Card.Body>
                                 <Card.Title>规划设计</Card.Title>
                                 <Card.Text>
@@ -118,7 +123,7 @@ const Service = (props) => {
                     </Col>
                     <Col>
                         <Card style={{ width: '24rem', height: '28rem', marginTop: 30 }}>
-                            <Card.Img variant="top" src={bgImg3} />
+                            <Card.Img variant="top" src={bgImg11} />
                             <Card.Body>
                                 <Card.Title>工程监理</Card.Title>
                                 <Card.Text>
