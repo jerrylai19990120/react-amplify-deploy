@@ -27,7 +27,7 @@ const Home = (props) => {
 
     useEffect(()=>{
         const myElement = document.querySelector('#myElement')
-        init(myElement, { showCursor: false, strings: ['The fast and visual way to understand your users'], loop: true, typeSpeed: 130 })
+        init(myElement, { showCursor: false, strings: ['快速，方便的让用户和房企通合二为一，达成更多。'], loop: true, typeSpeed: 130 })
     }, [])
 
     return (
@@ -36,7 +36,7 @@ const Home = (props) => {
                 <Row>
                     <Col>
                         <div id="myElement" style={{fontFamily: 'sans-serif', fontSize: 30, marginTop: 120, height: 80}}></div>
-                        <p style={{fontFamily:'sans-serif', marginTop: 30}}>Everything your team needs to uncover insights and make the right changes</p>
+                        <p style={{fontFamily:'sans-serif', marginTop: 30}}>帮助你的团队提供不同的视角，做适合的决策</p>
                         <Button variant="primary" style={{backgroundColor: '#4476BD', borderRadius: 18, marginTop: 20}} href="/vipsignup">会员注册</Button>
                         <div style={{marginTop: 30}}>
                             <span style={{fontFamily:'sans-serif', color: 'gray', marginTop: 20, fontSize: 13}}>创建一个账户</span><br />
