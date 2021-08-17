@@ -27,7 +27,7 @@ const Home = (props) => {
 
     useEffect(()=>{
         const myElement = document.querySelector('#myElement')
-        init(myElement, { showCursor: false, strings: ['快速，方便的让用户和房企通合二为一，达成更多。'], loop: true, typeSpeed: 130 })
+        init(myElement, { showCursor: false, strings: ['快速，方便的让用户和房企通合二为一，达到更多的方面'], loop: true, typeSpeed: 130 })
     }, [])
 
     return (
